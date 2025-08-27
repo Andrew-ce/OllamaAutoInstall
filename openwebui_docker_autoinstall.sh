@@ -13,5 +13,9 @@ echo \
 apt-get update
 apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 # For AMD GPU Systems
+
+############# DO NOT USE THE BELOW ##############
+###### USE THE COMMANDS FROM THIS SITE#######
+#https://burakberk.dev/deploying-ollama-open-webui-self-hosted/
 # docker run -it --device=/dev/kfd --device=/dev/dri --security-opt seccomp=unconfined --group-add video rocm/rocm-terminal
-docker run -d -p 3000:8080 --gpus=all -v ollama:/root/.ollama -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:ollama
+#docker run -d -p 3000:8080 --gpus=all -v ollama:/root/.ollama -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:ollama
