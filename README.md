@@ -1,4 +1,5 @@
 # Refactor and use commands from [AMD Install](https://burakberk.dev/deploying-ollama-open-webui-self-hosted/) for installs without IOMMU in a VM
+### For NVIDIA in VMs without passthrough the nvidia container toolkit needs to be installed and the machine restarted before running the containers
 
 ### OllamaAutoInstall
 OllamaAutoInstall contains the files necessary to create a simple stand alone locally run AI using Ollama. This was created for fresh installs on Debian systems.
